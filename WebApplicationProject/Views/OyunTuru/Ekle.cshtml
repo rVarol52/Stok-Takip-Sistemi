@@ -1,0 +1,26 @@
+﻿@model OyunTuru
+
+<form method="post">
+
+    <div class="border p-3 mt-5">
+        <div class="row pb-3">
+            <h2 class="text-primary">Oyun Türü Ekle</h2>
+            <hr />
+        </div>
+
+        <div class="mb-3">
+            <label>Oyun Türü Adı:</label>
+            <input asp-for="Ad"  class="form-control" />
+            <span asp-validation-for="Ad" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-lg btn-primary" style="width:250px">Oyun Türü Ekle</button>
+        <a asp-controller="OyunTuru" asp-action="Index" class="btn btn-lg btn-primary" style="width:250px">
+            Oyun Türlerine Geri Dön
+        </a>
+
+    </div>
+
+
+
+</form>

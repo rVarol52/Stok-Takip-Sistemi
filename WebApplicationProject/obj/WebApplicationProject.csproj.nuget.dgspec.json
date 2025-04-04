@@ -1,0 +1,57 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\rmzn5\\source\\repos\\WebApplicationProject\\WebApplicationProject.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\rmzn5\\source\\repos\\WebApplicationProject\\WebApplicationProject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rmzn5\\source\\repos\\WebApplicationProject\\WebApplicationProject.csproj",
+        "projectName": "WebApplicationProject",
+        "projectPath": "C:\\Users\\rmzn5\\source\\repos\\WebApplicationProject\\WebApplicationProject.csproj",
+        "packagesPath": "C:\\Users\\rmzn5\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rmzn5\\source\\repos\\WebApplicationProject\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rmzn5\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

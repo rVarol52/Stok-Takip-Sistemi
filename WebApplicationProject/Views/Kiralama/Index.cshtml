@@ -1,0 +1,70 @@
+﻿@model List<Kiralama>
+
+@if (TempData["basarili"]!= null )
+{
+    <h2 style="color:red">@TempData["basarili"]</h2>
+}
+
+<div class=" container">
+    <div class="row pt-3 pb-4"
+        <div>
+            <h1>Kiralamalar</h1>
+        </div>
+    </div>
+
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>
+                Id
+            </th>
+            <th>
+                Öğrenci ID
+            </th>
+            <th>
+                Oyun ID
+            </th>
+            <th>
+                Kiralanma Tarihi
+            </th>
+            <th>
+                Kira Bitiş Tarihi
+            <th>
+                
+            <th>
+            </th>
+            <th>
+            </th>
+        </tr>
+        </thead>
+
+        <tbody>
+            @foreach(var kiralama in Model)
+            {
+            <tr>
+                <td>@kiralama.Id</td>
+                <td>@kiralama.MusteriId</td>
+                <td>@kiralama.Oyun.OyunAdi</td>  
+                <td>@kiralama.KiraBaslangic</td>
+                <td>@kiralama.KiraBitis</td>
+                <td>
+                    <a asp-controller="Kiralama" asp-action="Guncelle" asp-route-id="@kiralama.Id" type="button" class="btn btn-success" style="width:250px">Güncelle</a>
+                </td>
+                <td>
+                    <a asp-controller="Kiralama" asp-action="Sil" asp-route-id="@kiralama.Id" type="button" class="btn btn-danger" style="width:250px">Sil</a>
+                </td>
+            </tr>
+            }
+        </tbody>
+
+    </table>
+
+    <div class="row pt-3 pb-2">
+        <div>
+            <a asp-controller="Kiralama" asp-action="Ekle" class="btn btn-lg btn-primary" type="button">
+                Yeni Kiralama Kaydı Oluştur
+            </a>
+        </div>
+    </div>
+
+</div>

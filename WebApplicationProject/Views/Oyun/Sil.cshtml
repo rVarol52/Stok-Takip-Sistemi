@@ -1,0 +1,37 @@
+﻿@model Oyun
+
+<form method="post">
+
+    <div class="border p-3 mt-5">
+        <div class="row pb-3">
+            <h2 class="text-primary">Oyun Türü Sil</h2>
+            <hr />
+        </div>
+
+        <div class="mb-3">
+            <label>Oyun Adı:</label>
+            <input asp-for="OyunAdi" disabled class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label>Oyun Tanımı:</label>
+            <input asp-for="Tanim" disabled class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label>Oyun Yayıncısı:</label>
+            <input asp-for="Yayıncı" disabled class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label>Oyun Fiyatı:</label>
+            <input asp-for="Fiyat" disabled class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-lg btn-primary" style="width:250px">Oyunu Sil</button>
+        <a asp-controller="Oyun" asp-action="Index" class="btn btn-lg btn-primary" style="width:250px">
+            Oyunlara Geri Dön
+        </a>
+
+    </div>
+
+
+
+</form>
